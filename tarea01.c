@@ -15,8 +15,8 @@ Proceso* buscarMayorPrioridad(Proceso *Procesos, int cantidad) {
    
    Proceso *mayor = Procesos;
    
-   for (int i = 1; i < cantida; i++){
-       if ((procesos + i) ->prioridad < mayor ->prioridad) {
+   for (int i = 1; i < cantidad; i++){
+       if ((Procesos + i) ->prioridad < mayor ->prioridad) {
            mayor = Procesos + i;
       }
    }
