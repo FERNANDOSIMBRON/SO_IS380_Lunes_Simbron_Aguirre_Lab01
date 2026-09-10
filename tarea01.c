@@ -7,4 +7,21 @@ typedef struct {
     int pid;
     char nombre[50];
     int prioridad;
+} Proceso;
+
+//parte C
+Proceso* buscarMayorPrioridad(proceso *Procesos, int cantidad) {
+   if (cantidad <= 0) return NULL;
+   
+   Proceso *mayor = procesos;
+   
+   for (int i = 1; i < cantida; i++){
+       if ((procesos + i) ->prioridad < mayor ->prioridad) {
+           mayor = procesos + i;
+      }
+   }
+   return mayor;
+
 }
+int main() {
+   Proceso lista[MAX_PROCESOS]
