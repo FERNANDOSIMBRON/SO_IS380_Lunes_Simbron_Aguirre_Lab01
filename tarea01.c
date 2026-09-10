@@ -39,7 +39,7 @@ int main() {
     do {
         printf("Ingrese Prioridad (1=alta - 5=baja): ");
         scanf("%d", &lista[i].prioridad);
-        if (lista[i].prioridad < 1 || lista[i].prioridad > 5); {
+        if (lista[i].prioridad < 1 || lista[i].prioridad > 5) {
             printf("[!] Prioridad invalida. Debe ser entre 1 y 5.\n");
         }
     } while (lista[i].prioridad < 1|| lista[i].prioridad > 5);
