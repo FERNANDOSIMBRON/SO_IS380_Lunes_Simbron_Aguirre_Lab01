@@ -46,3 +46,16 @@ int main() {
  }
 //llamaba a la funcion 
 Proceso *ganador = buscarMayorPrioridad(lista, MAX_PROCESOS);
+
+//parte D 
+printf("\n=======================\n");
+printf("  PROCESO SELECCIONADO (MAYOR PRIORIDAD) \n");
+printf("=========================================\n");
+    if (ganador != NULL) {
+        printf("PID:       %d\n", ganador->pid);
+        printf("Nombre:    %s\n", ganador->nombre);
+        printf("Prioridad: %d\n", ganador->prioridad);
+    }
+
+    return 0;
+}
