@@ -31,18 +31,18 @@ int main() {
     printf("\n--- Proceso %d ---\n", i + 1);
 
     printf("Ingrese PID: ");
-    scanf("%d", &lista[i],pid);
+    scanf("%d", &lista[i].pid);
 
     printf("Ingrese nombre: ");
-    scanf("%s", lista[i].nombre;
+    scanf("%s", lista[i].nombre);
     
     do {
         printf("Ingrese Prioridad (1=alta - 5=baja): ");
         scanf("%d", &lista[i].prioridad);
-        if (lista[i].prioridad < 1 || lista[i].prioridad > 5) {
+        if (lista[i].prioridad < 1 || lista[i].prioridad > 5); {
             printf("[!] Prioridad invalida. Debe ser entre 1 y 5.\n");
         }
-    } while (lista[i].prioridad < 1|| lista[i].prioridad > 5");
+    } while (lista[i].prioridad < 1|| lista[i].prioridad > 5);
  }
 //llamaba a la funcion 
 Proceso *ganador = buscarMayorPrioridad(lista, MAX_PROCESOS);
