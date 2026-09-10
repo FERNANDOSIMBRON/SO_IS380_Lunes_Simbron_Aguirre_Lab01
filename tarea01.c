@@ -10,7 +10,7 @@ typedef struct {
 } Proceso;
 
 //parte C
-Proceso* buscarMayorPrioridad(proceso *Procesos, int cantidad) {
+Proceso* buscarMayorPrioridad(Proceso *Procesos, int cantidad) {
    if (cantidad <= 0) return NULL;
    
    Proceso *mayor = procesos;
@@ -24,9 +24,9 @@ Proceso* buscarMayorPrioridad(proceso *Procesos, int cantidad) {
 
 }
 int main() {
-   Proceso lista[MAX_PROCESOS]
+   Proceso lista[MAX_PROCESOS];
 //parte B 
-    printf("==REGISTRO DE PROCESOS (% MAX) ==\n", MAX_PROCESOS);
+    printf("==REGISTRO DE PROCESOS (%d MAX) ==\n", MAX_PROCESOS);
     for (int i = 0; i < MAX_PROCESOS; i++) {
     printf("\n--- Proceso %d ---\n", i + 1);
 
