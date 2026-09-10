@@ -13,11 +13,11 @@ typedef struct {
 Proceso* buscarMayorPrioridad(Proceso *Procesos, int cantidad) {
    if (cantidad <= 0) return NULL;
    
-   Proceso *mayor = procesos;
+   Proceso *mayor = Procesos;
    
    for (int i = 1; i < cantida; i++){
        if ((procesos + i) ->prioridad < mayor ->prioridad) {
-           mayor = procesos + i;
+           mayor = Procesos + i;
       }
    }
    return mayor;
